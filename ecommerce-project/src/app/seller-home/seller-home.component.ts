@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { of } from 'rxjs';
 import { product } from '../datatype';
 import { ProductService } from '../services/product.service';
 
@@ -8,13 +9,33 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./seller-home.component.scss']
 })
 export class SellerHomeComponent {
-  productList : undefined | product[]
+  productList: undefined | product[]
+  productMessage: undefined | string
   constructor(private product: ProductService) { }
 
   ngOnInit(): void {
+   this.list()
+  }
+
+  deleteProduct(id: number) {
+    console.warn("test id", id)
+    this.product.deleteProduct(id).subscribe((result) => {
+      if (result) {
+        this.productMessage = "Product Deleted Successfully"
+        this.list()
+      }
+    })
+    setTimeout(() => {
+      this.productMessage = undefined
+    }, 3000)
+  }
+
+  list(){
     this.product.productList().subscribe((result) => {
       console.warn(result)
-      this.productList = result
+      if (result) {
+        this.productList = result
+      }
     })
   }
 }
