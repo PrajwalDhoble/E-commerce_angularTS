@@ -8,16 +8,21 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./seller-add-product.component.scss']
 })
 export class SellerAddProductComponent {
-
-  constructor( private product : ProductService) { }
+  addProductMessage: string | undefined
+  constructor(private product: ProductService) { }
 
   ngOnInit(): void {
 
   }
 
   submit(data: product) {
-    this.product.addProduct(data).subscribe(()=>{
-      
+    this.product.addProduct(data).subscribe((result) => {
+      if(result){
+        this.addProductMessage = "Product Added Successsfully"
+      }
+      setTimeout(()=>
+        (this.addProductMessage = undefined),3000
+      )
     })
   }
 }
