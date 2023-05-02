@@ -1,0 +1,102 @@
+{
+  "seller": [
+    {
+      "name": "prajwal",
+      "password": "abcd",
+      "email": "prajwal@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "shudhplsanshu",
+      "password": "jhhJ12345",
+      "email": "hsbb@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "hemantanshu",
+      "password": "jhhJ12345",
+      "email": "hs6bb@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Prajwal dhoble",
+      "password": "juytr",
+      "email": "juy",
+      "id": 4
+    },
+    {
+      "name": "Dada Ahire",
+      "password": "hygfd",
+      "email": "uy",
+      "id": 5
+    },
+    {
+      "name": "Dada Ahire 67",
+      "password": "hygfd",
+      "email": "uy09876543hj",
+      "id": 6
+    },
+    {
+      "name": "Dada Ahire 69",
+      "password": "hygfd",
+      "email": "uy09876543hj",
+      "id": 7
+    },
+    {
+      "name": "Dada Ahire 909",
+      "password": "hygfd",
+      "email": "hemantabai@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "yassin",
+      "password": "mallick",
+      "email": "ym@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "Dada Ahire",
+      "password": "iiuyh",
+      "email": "oiuy",
+      "id": 10
+    },
+    {
+      "name": "hemant Ahire",
+      "password": "uyt",
+      "email": "jkhg",
+      "id": 11
+    },
+    {
+      "name": "yjhsdcgjk",
+      "password": "jyt",
+      "email": "prajwal_fw14_308@masai.school",
+      "id": 12
+    },
+    {
+      "name": "hemant Ahire",
+      "password": "oiuyt",
+      "email": "piuytghj",
+      "id": 13
+    }
+  ],
+  "products": [
+    {
+      "name": "iphone12",
+      "price": "58000",
+      "color": "black",
+      "category": "smartphones",
+      "description": "IOS",
+      "image": "https://www.google.com/aclk?sa=l&ai=DChcSEwjljanXotb-AhUJmpYKHWZIBdIYABABGgJ0bA&sig=AOD64_1KwFv4oMvFeCjiFFE9R-faHKpS5Q&adurl&ctype=5&ved=2ahUKEwi4kJnXotb-AhVfDrcAHYEACxQQvhd6BAgBEG4",
+      "id": 1
+    },
+    {
+      "name": "hemant Ahire",
+      "price": "1",
+      "color": "black",
+      "category": "no",
+      "description": "no",
+      "image": "https://media.licdn.com/dms/image/C5603AQFy9YPMVwB9nw/profile-displayphoto-shrink_800_800/0/1644413645904?e=2147483647&v=beta&t=_rImoM8o4DmUUvlXvFnwlWuvcSkHwHsUV2mDZkYjVys",
+      "id": 2
+    }
+  ]
+}
