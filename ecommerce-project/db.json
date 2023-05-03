@@ -88,6 +88,15 @@
       "description": "IOS",
       "image": "https://cdn.shopify.com/s/files/1/1684/4603/products/iphone-12_Black.png?v=1641445595",
       "id": 1
+    },
+    {
+      "name": "hemant Ahire",
+      "price": "1",
+      "color": "black",
+      "category": "no",
+      "description": "kijuhgfd",
+      "image": "https://media.licdn.com/dms/image/C5603AQFy9YPMVwB9nw/profile-displayphoto-shrink_800_800/0/1644413645904?e=2147483647&v=beta&t=_rImoM8o4DmUUvlXvFnwlWuvcSkHwHsUV2mDZkYjVys",
+      "id": 2
     }
   ]
 }
