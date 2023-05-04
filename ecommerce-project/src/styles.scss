@@ -34,3 +34,13 @@ body {
 }
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+.carousel-caption{
+    background-color: rgb(181, 177, 177);
+    border-radius: 5px;
+}
+
+.carousel-control-next-icon , .carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 5px;
+}
