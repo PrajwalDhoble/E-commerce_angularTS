@@ -16,7 +16,6 @@ export class SellerAuthComponent {
   }
   
   signUp(data: SignUp): void {
-    console.warn(data)
     this.seller.userSignUp(data)
   }
 

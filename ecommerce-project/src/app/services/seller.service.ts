@@ -18,7 +18,6 @@ export class SellerService {
         this.isSellerLoggedIn.next(true)
         localStorage.setItem('seller', JSON.stringify(result.body))
         this.router.navigate(['seller-home'])
-        console.warn('result', result);
       })
   }
   reloadSeller() {
@@ -30,17 +29,13 @@ export class SellerService {
   }
 
   userLogin(data: logIn) {
-    console.warn(data);
     this.http.get(`http://localhost:3000/seller?email=${data.email}&password=${data.password}`,
       { observe: 'response' }).subscribe((result: any) => {
-        console.warn(result)
         if(result.body.length>=1){
-          console.warn("User LoggedIn")
           localStorage.setItem('seller', JSON.stringify(result.body))
           this.router.navigate(['seller-home'])
         }
         else{
-          console.warn("LogIn Failed")
           this.isLoginError.emit(true)
         }
       })

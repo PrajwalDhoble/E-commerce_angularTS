@@ -20,7 +20,6 @@ export class SellerHomeComponent {
   }
 
   deleteProduct(id: number) {
-    console.warn("test id", id)
     this.product.deleteProduct(id).subscribe((result) => {
       if (result) {
         this.productMessage = "Product Deleted Successfully"
@@ -34,7 +33,6 @@ export class SellerHomeComponent {
 
   list(){
     this.product.productList().subscribe((result) => {
-      console.warn(result)
       if (result) {
         this.productList = result
       }
