@@ -9,6 +9,8 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent {
+  productQuantity : number = 1
+  quantity:number = 1 
   productData : undefined | product
   constructor( private activeRoute : ActivatedRoute , private product : ProductService) {}
 
@@ -17,5 +19,14 @@ export class ProductDetailsComponent {
     productId && this.product.getProduct(productId).subscribe((result)=>{
       this.productData = result
     })
+  }
+
+  handleQuantity(val : string){
+    if(this.productQuantity < 20 && val === 'plus'){
+      this.productQuantity += 1
+    }
+    else if(this.productQuantity > 1 && val === 'min'){
+      this.productQuantity -= 1
+    }
   }
 }
