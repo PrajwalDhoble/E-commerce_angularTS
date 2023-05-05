@@ -1,5 +1,5 @@
-<nav class="nav">
-    <h1><a routerLink="/">E-Commerce</a></h1>
+<nav class="nav header">
+    <h1 style="margin-left: 5px;"><a routerLink="/">E-Commerce</a></h1>
     <div *ngIf="menuType === 'default'" class="nav-search">
         <input #searchInput type="text" (keyup)="searchProducts($event)" (blur)="hideSearch()"
             placeholder="search any products here" />
