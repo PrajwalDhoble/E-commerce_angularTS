@@ -1,1 +1,27 @@
-<p>user-auth works!</p>
+<div class="user-auth">
+<h1 class="user-auth">User Sign Up</h1>
+<form class="common-form" #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
+    <input class="form-input"
+    type="text"
+    placeholder="Enter Username"
+    name="name"
+    ngModel
+    >
+
+    <input class="form-input"
+    type="text"
+    placeholder="Enter email"
+    name="email"
+    ngModel
+    >
+
+    <input class="form-input"
+    type="password"
+    placeholder="Enter Password"
+    name="password"
+    ngModel
+    >
+
+    <button style="margin-bottom: 50px;" class="form-button">Sign Up</button>
+</form>
+</div>
