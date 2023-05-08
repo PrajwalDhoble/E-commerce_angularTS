@@ -141,6 +141,12 @@
       "email": "ahiredada1997@gmail.com",
       "password": "edws",
       "id": 1
+    },
+    {
+      "name": "Prajwal dhoble",
+      "email": "prajwal@gmail.com",
+      "password": "abcd",
+      "id": 2
     }
   ]
 }

@@ -11,6 +11,8 @@ export class HeaderComponent {
   menuType: string = 'default'
   sellerName: string = ''
   searchResult: undefined | product[]
+  userNAme: string = ""
+
   constructor(private route: Router, private product: ProductService) {
 
   }
@@ -25,6 +27,11 @@ export class HeaderComponent {
             let sellerData = sellerStore && JSON.parse(sellerStore)[0]
             this.sellerName = sellerData.name
           }
+        } else if (localStorage.getItem('user')) {
+          let usersStore = localStorage.getItem('user')
+          let userData = usersStore && JSON.parse(usersStore)
+          this.userNAme = userData.name;
+          this.menuType = 'user'
         } else {
           this.menuType = 'default'
         }
@@ -35,6 +42,11 @@ export class HeaderComponent {
   logout() {
     localStorage.removeItem('seller')
     this.route.navigate(['/'])
+  }
+
+  userLogout(){
+    localStorage.removeItem('user')
+    this.route.navigate(['/user-auth'])
   }
 
   searchProducts(query: KeyboardEvent) {
@@ -53,11 +65,11 @@ export class HeaderComponent {
     this.searchResult = undefined
   }
 
-  redirectToDetails(id : number){
-    this.route.navigate(['/details/'+id])
+  redirectToDetails(id: number) {
+    this.route.navigate(['/details/' + id])
   }
 
-  submitSearch(val:string){
+  submitSearch(val: string) {
     this.route.navigate([`search/${val}`])
   }
 }

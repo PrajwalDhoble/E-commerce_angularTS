@@ -17,6 +17,12 @@
             <li><a routerLink="user-auth">LogIn/SignUp</a></li>
             <li><a>Cart(0)</a></li>
         </ul>
+        <ul *ngSwitchCase="'user'">
+            <li><a routerLink="/seller-add-product">Seller</a></li>
+            <li><a routerLink="/seller-home">Home</a></li>
+            <li><a>{{userNAme | titlecase}}</a></li>
+            <li><a (click)="userLogout()">LogOut</a></li>
+        </ul>
         <ul *ngSwitchCase="'seller'">
             <li><a routerLink="/seller-add-product">Add Product</a></li>
             <li><a routerLink="/seller-home">Product List</a></li>
