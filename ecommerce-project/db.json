@@ -135,7 +135,12 @@
       "id": 6
     }
   ],
-  "users" : [
-    
+  "users": [
+    {
+      "name": "yassin",
+      "email": "ahiredada1997@gmail.com",
+      "password": "edws",
+      "id": 1
+    }
   ]
 }
